@@ -1,0 +1,239 @@
+.header {
+  color: #ffffff;
+
+  background-color: #b80027;
+  background-image: conic-gradient(
+    from 225deg at 16.03% 39.06%,
+  #003d85,
+  #b80027,
+  #003d85
+  );
+  padding-top: 32px;
+
+  @include vp-1200 {
+    background-image: conic-gradient(
+      from 225deg at 20.7% 35.74%,
+    #003d85,
+    #b80027,
+    #003d85
+    );
+
+    padding-top: 36px;
+    padding-bottom: 78px;
+  }
+
+  @include vp-768 {
+    background-image: conic-gradient(
+      from 225deg at 35.31% 34.22%,
+    #003d85,
+    #b80027,
+    #003d85
+    );
+    padding-top: 15px;
+  }
+}
+
+.header__container {
+  position: relative;
+}
+
+.header__top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 102px;
+
+  @include vp-1200 {
+    margin-bottom: 25px;
+  }
+
+  @include vp-768 {
+    margin-bottom: 70px;
+  }
+}
+
+.header__logo-link img {
+  margin-top: 8px;
+  width: 122px;
+  height: 40px;
+
+  @include vp-1200 {
+    margin: 0;
+    width: 82px;
+    height: 17px;
+  }
+
+  @include vp-768 {
+    width: 69px;
+    height: 24px;
+  }
+}
+
+.header__tel {
+  color: #ffffff;
+  font-size: 26px;
+  font-family: $ff-alumni-sans;
+  font-weight: 600;
+  letter-spacing: 0.78px;
+
+  @include vp-1200 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.48px;
+  }
+
+  @include vp-768 {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+  }
+}
+
+.header__content-container {
+  display: flex;
+
+  @include vp-1200 {
+    justify-content: space-between;
+  }
+}
+
+.header__content {
+  display: flex;
+
+  margin-bottom: 96px;
+
+  @include vp-1200 {
+    margin: 0;
+    margin-right: 30px;
+  }
+
+  @include vp-768 {
+    position: relative;
+
+    flex-grow: 1;
+    margin: 0;
+  }
+}
+
+.header__content-left {
+  align-self: start;
+
+  text-align: right;
+  font-size: 14px;
+  line-height: 1.5;
+
+  margin: 192px 19px 0 19px;
+  width: 113px;
+
+  @include vp-1200 {
+    margin-top: 181px;
+    margin-left: 0;
+  }
+
+  @include vp-768 {
+    position: absolute;
+    top: 125px;
+    left: 0;
+
+    margin: 0;
+  }
+}
+
+.header__content-right {
+  width: 246px;
+
+  @include vp-1200 {
+    margin-top: 45px;
+    width: 192px;
+  }
+
+  @include vp-768 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    flex-grow: 1;
+    width: auto;
+    margin-top: 0;
+  }
+}
+
+.header__city-name {
+  font-size: 48px;
+  font-family: $ff-alumni-sans;
+  font-weight: 600;
+  letter-spacing: 1.44px;
+  text-align: right;
+  text-transform: uppercase;
+
+  margin: 0;
+  margin-bottom: 12px;
+  margin-right: 48px;
+
+  @include vp-1200 {
+    font-size: 34px;
+    letter-spacing: 1.02px;
+
+    margin: 0;
+    margin-bottom: 6px;
+  }
+
+  @include vp-768 {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+
+    margin-bottom: 14px;
+  }
+}
+
+.header__title {
+  text-align: right;
+  font-size: 92px;
+  font-family: $ff-alumni-sans;
+  font-weight: 600;
+  letter-spacing: 4.6px;
+
+  margin: 0;
+  margin-bottom: 47px;
+
+  @include vp-1200 {
+    font-size: 72px;
+    letter-spacing: 3.6px;
+
+    margin-bottom: 22px;
+  }
+}
+
+.header__button {
+  margin-left: 16px;
+
+  @include vp-1200 {
+    margin-left: 9px;
+  }
+
+  @include vp-768 {
+    align-self: stretch;
+
+    flex-grow: 1;
+    margin-left: 0;
+  }
+}
+
+.header__content-container picture {
+  position: absolute;
+  left: 460px;
+  top: 20px;
+
+  @include vp-1200 {
+    position: static;
+
+    display: flex;
+    justify-content: center;
+
+    flex-grow: 1;
+  }
+
+  @include vp-768 {
+    display: none;
+  }
+}

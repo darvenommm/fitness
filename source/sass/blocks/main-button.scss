@@ -1,0 +1,23 @@
+.main-button {
+  display: inline-block;
+
+  color: #ffffff;
+  font-size: 12px;
+  font-family: $ff-placeholder;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: transparent;
+  cursor: pointer;
+
+  border: 4px solid #ffffff;
+  padding: 20px 52px;
+
+  @include vp-1200 {
+    padding: 20px 29px;
+  }
+}
