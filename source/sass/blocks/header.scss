@@ -1,35 +1,37 @@
 .header {
   color: #ffffff;
 
-  background-color: #b80027;
+  background-color: $color-venetian-red;
   background-image: conic-gradient(
     from 225deg at 16.03% 39.06%,
-  #003d85,
-  #b80027,
-  #003d85
+    $color-dark-cerulean,
+    $color-venetian-red,
+    $color-dark-cerulean
   );
-  padding-top: 32px;
+  padding-top: 22px;
 
   @include vp-1200 {
     background-image: conic-gradient(
       from 225deg at 20.7% 35.74%,
-    #003d85,
-    #b80027,
-    #003d85
+      $color-dark-cerulean,
+      $color-venetian-red,
+      $color-dark-cerulean
     );
 
     padding-top: 36px;
-    padding-bottom: 78px;
+    padding-bottom: 83px;
   }
 
   @include vp-768 {
     background-image: conic-gradient(
       from 225deg at 35.31% 34.22%,
-    #003d85,
-    #b80027,
-    #003d85
+      $color-dark-cerulean,
+      $color-venetian-red,
+      $color-dark-cerulean
     );
+
     padding-top: 15px;
+    padding-bottom: 81px;
   }
 }
 
@@ -42,10 +44,10 @@
   justify-content: space-between;
   align-items: center;
 
-  margin-bottom: 102px;
+  margin-bottom: 92px;
 
   @include vp-1200 {
-    margin-bottom: 25px;
+    margin-bottom: 17px;
   }
 
   @include vp-768 {
@@ -126,14 +128,14 @@
   width: 113px;
 
   @include vp-1200 {
-    margin-top: 181px;
+    margin-top: 186px;
     margin-left: 0;
   }
 
   @include vp-768 {
     position: absolute;
-    top: 125px;
-    left: 0;
+    top: 122px;
+    left: -1px;
 
     margin: 0;
   }
@@ -143,7 +145,7 @@
   width: 246px;
 
   @include vp-1200 {
-    margin-top: 45px;
+    margin-top: 51px;
     width: 192px;
   }
 
@@ -182,7 +184,7 @@
     font-size: 28px;
     letter-spacing: 0.84px;
 
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
 }
 
@@ -192,6 +194,7 @@
   font-family: $ff-alumni-sans;
   font-weight: 600;
   letter-spacing: 4.6px;
+  text-transform: uppercase;
 
   margin: 0;
   margin-bottom: 47px;
@@ -199,8 +202,13 @@
   @include vp-1200 {
     font-size: 72px;
     letter-spacing: 3.6px;
+    text-transform: capitalize;
 
-    margin-bottom: 22px;
+    margin-bottom: 35px;
+  }
+
+  @include vp-768 {
+    margin-bottom: 21px;
   }
 }
 
@@ -222,7 +230,7 @@
 .header__content-container picture {
   position: absolute;
   left: 460px;
-  top: 20px;
+  top: 26px;
 
   @include vp-1200 {
     position: static;
