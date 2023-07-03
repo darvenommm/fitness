@@ -1,9 +1,9 @@
-const HAS_VIDEO_CLASS = 'description__video--has-video';
-
-const root = document.querySelector('.description__video');
-const button = root.querySelector('button');
-
 export const addVideoHandlers = () => {
+  const HAS_VIDEO_CLASS = 'description__video--has-video';
+
+  const root = document.querySelector('.description__video');
+  const button = root.querySelector('button');
+
   button.addEventListener('click', () => {
     root.replaceChildren();
     root.classList.add(HAS_VIDEO_CLASS);

@@ -1,7 +1,10 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {initTabs} from './modules/tabs/init-tabs';
+
 import {addVideoHandlers} from './modules/description/video';
+import {addButtonsClassByCardHover} from './modules/subscriptions/card';
 
 // ---------------------------------
 
@@ -24,6 +27,10 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
 
     addVideoHandlers();
+
+    addButtonsClassByCardHover();
+
+    initTabs();
   });
 });
 

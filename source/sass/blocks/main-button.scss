@@ -20,4 +20,54 @@
   @include vp-1200 {
     padding: 20px 29px;
   }
+
+  &.active {
+    color: #103aae;
+
+    background-color: #ffffff;
+  }
+
+  @include hover-focus {
+    color: #103aae;
+
+    background-color: #ffffff;
+  }
+
+  @include active {
+    color: $color-primary;
+
+    background-color: #ffffff;
+  }
+
+  @include disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &--dark {
+    color: $color-dark-cerulean;
+
+    border-color: $color-dark-cerulean;
+
+    &.active {
+      color: #ffffff;
+
+      border-image: linear-gradient(118deg, $color-torch-red, $color-dark-cerulean) 1;
+      background-image: linear-gradient(118deg, $color-torch-red, $color-dark-cerulean);
+    }
+
+    @include hover-focus {
+      color: #ffffff;
+
+      border-image: linear-gradient(118deg, $color-torch-red, $color-dark-cerulean) 1;
+      background-image: linear-gradient(118deg, $color-torch-red, $color-dark-cerulean);
+    }
+
+    @include active {
+      color: rgba(#ffffff, 0.7);
+
+      border-image: linear-gradient(118deg, $color-torch-red, $color-dark-cerulean) 1;
+      background-image: linear-gradient(118deg, $color-torch-red, $color-dark-cerulean);
+    }
+  }
 }

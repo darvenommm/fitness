@@ -5,33 +5,61 @@
 }
 
 @mixin hover {
-  @media (hover: hover) {
-    &:hover:not(.focus-visible) {
+  @media (pointer: fine) {
+    &:hover:not([disabled]) {
       @content;
     }
   }
 }
 
 @mixin focus {
-  &.focus-visible:focus {
+  &:focus-visible:not([disabled]) {
     @content;
   }
 }
 
 @mixin active {
-  &.focus-visible:active {
+  &:active:not([disabled]) {
+    @content;
+  }
+}
+
+@mixin disabled {
+  &[disabled] {
     @content;
   }
 }
 
 @mixin hover-focus {
-  @media (hover: hover) {
-    &:hover:not(.focus-visible) {
-      @content;
-    }
+  @include hover {
+    @content;
   }
 
-  &.focus-visible:focus {
+  @include focus {
+    @content;
+  }
+}
+
+@mixin hover-active {
+  @include hover {
+    @content;
+  }
+
+  @include active {
+    @content;
+  }
+}
+
+@mixin all-states {
+  @include hover {
+    @content;
+  }
+
+  @include focus {
+    @content;
+  }
+
+  @include active {
     @content;
   }
 }
