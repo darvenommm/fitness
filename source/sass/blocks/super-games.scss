@@ -1,0 +1,203 @@
+.super-games {
+  padding-top: 120px;
+  padding-bottom: 106px;
+
+  @include vp-1200 {
+    padding: 100px 0;
+  }
+
+  @include vp-768 {
+    padding: 70px 0;
+  }
+}
+
+.super-games__container {
+  display: flex;
+
+  picture {
+    display: flex;
+
+    flex-grow: 1;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  @include vp-768 {
+    flex-direction: column;
+  }
+}
+
+.super-games__left {
+  color: #ffffff;
+
+  background-color: #ed0233;
+
+  width: 500px;
+  padding: 81px 79px 87px 77px;
+
+  @include vp-1200 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 292px;
+    padding: 47px 45px 50px 44px;
+  }
+
+  @include vp-768 {
+    align-items: center;
+
+    width: 100%;
+    padding: 50px 44px;
+  }
+}
+
+.super-games__inner-top {
+  display: flex;
+  gap: 0 50px;
+
+  margin-bottom: 8px;
+
+  @include vp-1200 {
+    gap: 0 29px;
+
+    margin: 0;
+  }
+}
+
+.super-games__title {
+  font-size: 82px;
+  font-family: $ff-alumni-sans;
+  font-weight: 600;
+  line-height: 96%;
+  letter-spacing: 2.46px;
+  text-align: center;
+
+  margin: 0;
+  margin-top: 5px;
+  width: 201px;
+
+  @include vp-1200 {
+    font-size: 48px;
+    letter-spacing: 1.44px;
+  }
+
+  @include vp-768 {
+    width: 117px;
+  }
+}
+
+.super-games__info {
+  flex-grow: 1;
+}
+
+.super-games__date {
+  margin-bottom: 9px;
+
+  @include vp-1200 {
+    margin: 0;
+  }
+}
+
+.super-games__subtitle {
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 400;
+
+  margin: 0;
+
+  @include vp-1200 {
+    font-size: 12px;
+  }
+}
+
+.super-games__date-text {
+  display: inline-flex;
+  align-items: center;
+
+  .super-games__value {
+    margin-right: 7px;
+
+    @include vp-1200 {
+      margin-right: 3px;
+    }
+  }
+}
+
+.super-games__date-text,
+.super-games__time-text {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4px;
+
+    background-color: #ffffff;
+
+    height: 2px;
+
+    content: "";
+  }
+
+  @include vp-1200 {
+    &::before {
+      top: 0;
+    }
+  }
+}
+
+.super-games__value {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 150%;
+
+  @include vp-1200 {
+    font-size: 24px;
+  }
+}
+
+.super-games__extra-text {
+  font-size: 14px;
+  line-height: 150%;
+
+  @include vp-1200 {
+    font-size: 10px;
+  }
+}
+
+.super-games__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+
+  margin: 0;
+  margin-bottom: 47px;
+
+  @include vp-1200 {
+    font-size: 12px;
+
+    margin-bottom: 27px;
+  }
+}
+
+.super-games__button {
+  display: block;
+
+  width: 100%;
+  padding-bottom: 25px;
+
+  @include vp-1200 {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+
+    padding: 11px 48px;
+  }
+
+  @include vp-768 {
+    width: 202px;
+  }
+}

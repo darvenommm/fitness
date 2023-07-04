@@ -1,8 +1,10 @@
 export const addVideoHandlers = () => {
+  const ROOT_SELECTOR = '.description__video';
+  const BUTTON_SELECTOR = 'button';
   const HAS_VIDEO_CLASS = 'description__video--has-video';
 
-  const root = document.querySelector('.description__video');
-  const button = root.querySelector('button');
+  const root = document.querySelector(ROOT_SELECTOR);
+  const button = root.querySelector(BUTTON_SELECTOR);
 
   button.addEventListener('click', () => {
     root.replaceChildren();

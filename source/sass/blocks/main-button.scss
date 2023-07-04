@@ -13,6 +13,9 @@
 
   background-color: transparent;
   cursor: pointer;
+  transition:
+    color $trans-time,
+    background-color $trans-time;
 
   border: 4px solid #ffffff;
   padding: 20px 52px;
@@ -45,29 +48,56 @@
   }
 
   &--dark {
+    position: relative;
+    z-index: 0;
+
     color: $color-dark-cerulean;
 
     border-color: $color-dark-cerulean;
 
+    &::before {
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      bottom: -2px;
+      left: -2px;
+      z-index: -1;
+
+      opacity: 0;
+      transition: opacity $trans-time;
+      background-image: linear-gradient(118deg, $color-torch-red, $color-dark-cerulean);
+
+      content: "";
+    }
+
     &.active {
       color: #ffffff;
 
-      border-image: linear-gradient(118deg, $color-torch-red, $color-dark-cerulean) 1;
-      background-image: linear-gradient(118deg, $color-torch-red, $color-dark-cerulean);
+      border-color: transparent;
+
+      &::before {
+        opacity: 1;
+      }
     }
 
     @include hover-focus {
       color: #ffffff;
 
-      border-image: linear-gradient(118deg, $color-torch-red, $color-dark-cerulean) 1;
-      background-image: linear-gradient(118deg, $color-torch-red, $color-dark-cerulean);
+      border-color: transparent;
+
+      &::before {
+        opacity: 1;
+      }
     }
 
     @include active {
       color: rgba(#ffffff, 0.7);
 
-      border-image: linear-gradient(118deg, $color-torch-red, $color-dark-cerulean) 1;
-      background-image: linear-gradient(118deg, $color-torch-red, $color-dark-cerulean);
+      border-color: transparent;
+
+      &::before {
+        opacity: 1;
+      }
     }
   }
 }
