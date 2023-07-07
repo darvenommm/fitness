@@ -209,13 +209,32 @@
             <h2 class="subscriptions__title" id="subscriptions">Абонементы</h2>
             <ul class="subscriptions__buttons" data-tabs="controls">
               <li class="subscriptions__button-item">
-                <button class="subscriptions__button is-active" type="button" data-tabs="control">1&nbsp;месяц</button>
+                <button
+                  class="subscriptions__button is-active"
+                  type="button"
+                  data-tabs="control"
+                  tabindex="-1"
+                  >
+                    1&nbsp;месяц
+                  </button>
               </li>
               <li class="subscriptions__button-item">
-                <button class="subscriptions__button" type="button" data-tabs="control">6&nbsp;месяцев</button>
+                <button
+                  class="subscriptions__button"
+                  type="button"
+                  data-tabs="control"
+                >
+                  6&nbsp;месяцев
+                </button>
               </li>
               <li class="subscriptions__button-item">
-                <button class="subscriptions__button" type="button" data-tabs="control">12&nbsp;месяцев</button>
+                <button
+                  class="subscriptions__button"
+                  type="button"
+                  data-tabs="control"
+                >
+                  12&nbsp;месяцев
+                </button>
               </li>
             </ul>
             <div data-tabs="content">
@@ -805,6 +824,91 @@
                     с&nbsp;профессиональным тренером
                   </p>
                 </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="stock">
+          <div class="container">
+            <h2 class="stock__title">Акции</h2>
+            <ul class="stock__items">
+              <li class="stock__main-item">
+                <div class="stock__main-container">
+                  <div>
+                    <h3 class="visually-hidden">
+                      Безлимитный абонемент в тренажерный зал.
+                    </h3>
+                    <p class="stock__main-top">
+                      Год
+                      <span class="stock__main-price">4999</span>
+                    </p>
+                    <div class="stock__main-texts">
+                      <p>Безлимитный абонемент в тренажерный зал</p>
+                    </div>
+                  </div>
+                  <a class="stock__link stock__link--main" href="/stock.html">подробнее</a>
+                </div>
+                <picture>
+                  <source
+                    width="290"
+                    height="299"
+                    media="(max-width: 767px)"
+                    srcset="./img/stock/woman-mobile@2x.webp 2x, ./img/stock/woman-mobile@1x.webp 1x"
+                    type="image/webp"
+                  >
+                  <source
+                    width="290"
+                    height="299"
+                    media="(max-width: 767px)"
+                    srcset="./img/stock/woman-mobile@2x.jpg 2x, ./img/stock/woman-mobile@1x.jpg 1x"
+                    type="image/jpeg"
+                  >
+                  <source
+                    width="399"
+                    height="462"
+                    media="(max-width: 1199px)"
+                    srcset="./img/stock/woman-tablet@2x.webp 2x, ./img/stock/woman-tablet@1x.webp 1x"
+                    type="image/webp"
+                  >
+                  <source
+                    width="399"
+                    height="462"
+                    media="(max-width: 1199px)"
+                    srcset="./img/stock/woman-tablet@2x.jpg 2x, ./img/stock/woman-tablet@1x.jpg 1x"
+                    type="image/jpeg"
+                  >
+                  <source
+                    width="280"
+                    height="462"
+                    srcset="./img/stock/woman-desktop@2x.webp 2x, ./img/stock/woman-desktop@1x.webp 1x"
+                    type="image/webp"
+                  >
+                  <img
+                    width="280"
+                    height="462"
+                    srcset="./img/stock/woman-desktop@2x.jpg 2x, ./img/stock/woman-desktop@1x.jpg 1x"
+                    src="./img/stock/woman-desktop@1x.jpg"
+                    alt="Женщина в спортивной форме."
+                  >
+                </picture>
+              </li>
+              <li class="stock__item">
+                <div>
+                  <h3 class="stock__subtitle">Месяц бесплатно</h3>
+                  <div class="stock__texts">
+                    <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
+                  </div>
+                </div>
+                <a class="stock__link" href="/stock.html">подробнее</a>
+              </li>
+              <li class="stock__item">
+                <div>
+                  <h3 class="stock__subtitle">Скидка&nbsp;20%</h3>
+                  <div class="stock__texts">
+                    <p>Корпоративный фитнес с&nbsp;командой</p>
+                  </div>
+                </div>
+                <a class="stock__link" href="/stock.html">подробнее</a>
               </li>
             </ul>
           </div>

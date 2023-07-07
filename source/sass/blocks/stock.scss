@@ -1,0 +1,309 @@
+.stock {
+  padding-top: 146px;
+  padding-bottom: 120px;
+
+  @include vp-1200 {
+    padding-top: 85px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-1200 {
+    padding-top: 62px;
+    padding-bottom: 70px;
+  }
+}
+
+.stock__title {
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  font-weight: 600;
+  letter-spacing: 1.62px;
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 34px;
+
+  @include vp-1200 {
+    position: relative;
+    left: -5px;
+
+    font-size: 42px;
+    letter-spacing: 1.26px;
+
+    margin-bottom: 38px;
+  }
+
+  @include vp-768 {
+    left: -2px;
+
+    font-size: 32px;
+    letter-spacing: 0.96px;
+
+    margin-bottom: 44px;
+  }
+}
+
+.stock__items {
+  display: grid;
+  grid-template-columns: repeat(2, 560px);
+  gap: 40px;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include vp-1200 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  @include vp-768 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stock__main-item {
+  display: flex;
+
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+
+  picture {
+    display: flex;
+
+    flex-grow: 1;
+  }
+
+  @include vp-1200 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @include vp-768 {
+    flex-direction: column;
+
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+}
+
+.stock__main-container {
+  box-sizing: content-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+
+  color: #ffffff;
+
+  background-color: #ed0233;
+
+  padding: 29px 44px 47px 46px;
+  max-width: 190px;
+
+  @include vp-1200 {
+    padding-bottom: 43px;
+  }
+
+  @include vp-768 {
+    text-align: center;
+
+    max-width: none;
+  }
+}
+
+.stock__main-top {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 156%;
+
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.stock__main-price {
+  display: block;
+
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 90%;
+}
+
+.stock__main-texts {
+  margin-bottom: 20px;
+
+  p {
+    font-size: 18px;
+    line-height: 140%;
+
+    margin-top: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.stock__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+
+  color: #1c3374;
+
+  background-color: #ffffff;
+
+  padding: 20px 28px 30px;
+  margin: 7px;
+
+  &::before {
+    position: absolute;
+    inset: -7px;
+    z-index: -1;
+
+    background-image: linear-gradient(160deg, #d10a42, #00359f);
+
+    content: "";
+  }
+
+  @include vp-768 {
+    padding: 33px 28px 38px;
+
+    text-align: center;
+  }
+}
+
+.stock__subtitle {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 130%;
+
+  margin: 0;
+
+  @include vp-1200 {
+    margin-bottom: 8px;
+  }
+}
+
+.stock__texts {
+  margin-bottom: 40px;
+
+  p {
+    font-size: 16px;
+    line-height: 140%;
+
+    margin-top: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include vp-768 {
+    margin-bottom: 16px;
+  }
+}
+
+.stock__link {
+  position: relative;
+
+  color: #1c3374;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  outline: none;
+  transition: opacity $trans-time;
+
+  border: none;
+  padding: 5px 0;
+  margin: 0;
+
+  &::before {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    background-color: #1c3374;
+    transition: opacity $trans-time;
+
+    height: 1px;
+
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    inset: -5px -10px;
+
+    border: 2px solid $color-primary;
+    transition: opacity $trans-time;
+    opacity: 0;
+
+    content: "";
+  }
+
+  @include hover {
+    opacity: 0.7;
+
+    &::before {
+      opacity: 0.7;
+    }
+  }
+
+  @include focus {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  @include active {
+    opacity: 1;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  @include disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
+
+  &--main {
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+
+    &::before {
+      background-color: #ffffff;
+    }
+
+    &::after {
+      border-color: #ffffff;
+    }
+  }
+
+  @include vp-768 {
+    align-self: center;
+  }
+}

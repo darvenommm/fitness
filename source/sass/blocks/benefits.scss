@@ -10,11 +10,13 @@
 
   @include vp-768 {
     padding: 40px 0;
+    padding-bottom: 20px;
   }
 }
 
 .benefits__title {
   position: relative;
+  left: 5px;
 
   font-family: $ff-alumni-sans;
   font-size: 54px;
@@ -153,7 +155,7 @@
 
     text-align: center;
 
-    padding: 0 32px;
+    padding: 0 31px;
     margin-bottom: 41px;
 
     &--main {
