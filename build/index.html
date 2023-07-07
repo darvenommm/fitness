@@ -209,7 +209,7 @@
             <h2 class="subscriptions__title" id="subscriptions">Абонементы</h2>
             <ul class="subscriptions__buttons" data-tabs="controls">
               <li class="subscriptions__button-item">
-                <button class="subscriptions__button" type="button" data-tabs="control">1&nbsp;месяц</button>
+                <button class="subscriptions__button is-active" type="button" data-tabs="control">1&nbsp;месяц</button>
               </li>
               <li class="subscriptions__button-item">
                 <button class="subscriptions__button" type="button" data-tabs="control">6&nbsp;месяцев</button>
@@ -219,7 +219,7 @@
               </li>
             </ul>
             <div data-tabs="content">
-              <ul class="subscriptions__items" data-tabs="element">
+              <ul class="subscriptions__items is-active" data-tabs="element">
                 <li class="subscriptions__item">
                   <h3 class="subscriptions__subtitle">С&nbsp;тренером</h3>
                   <p class="subscriptions__extra-text">12&nbsp;занятий</p>
@@ -743,9 +743,75 @@
             </div>
           </div>
         </section>
+        <section class="benefits">
+          <div class="container">
+            <h2 class="benefits__title">Наши преимущества</h2>
+            <ul class="benefits__items">
+              <li class="benefits__item benefits__item--top benefits__item--left">
+                <div class="benefits__value-container">
+                  <p class="benefits__value">900</p>
+                  <p class="benefits__extra">кв/м</p>
+                </div>
+                <div class="benefits__content">
+                  <h3 class="benefits__subtitle">Площадь</h3>
+                  <p class="benefits__text">
+                    Занимайтесь без очередей и&nbsp;толпучки
+                  </p>
+                </div>
+              </li>
+              <li class="benefits__item benefits__item--top">
+                <div class="benefits__value-container">
+                  <p class="benefits__value">70</p>
+                  <p class="benefits__extra">машин</p>
+                </div>
+                <div class="benefits__content">
+                  <h3 class="benefits__subtitle">Собственная парковка</h3>
+                  <p class="benefits__text">
+                    Вы&nbsp;всегда найдете место для своей
+                    машины на&nbsp;нашей парковке
+                  </p>
+                </div>
+              </li>
+              <li class="benefits__item benefits__item--main">
+                <h3 class="benefits__subtitle">
+                  <span class="benefits__subtitle-number">100</span>
+                  Тренажеров
+                </h3>
+                <p class="benefits__text">
+                  Современные тренажеры на&nbsp;все группы мышц
+                </p>
+              </li>
+              <li class="benefits__item benefits__item--left">
+                <div class="benefits__value-container">
+                  <p class="benefits__value">350</p>
+                  <p class="benefits__extra">мест</p>
+                </div>
+                <div class="benefits__content">
+                  <h3 class="benefits__subtitle">Комфорт</h3>
+                  <p class="benefits__text">
+                    Просторные раздевалки, душевые, фен, Wi-Fi, кулеры
+                  </p>
+                </div>
+              </li>
+              <li class="benefits__item">
+                <div class="benefits__value-container">
+                  <p class="benefits__value">5+</p>
+                  <p class="benefits__extra">лет</p>
+                </div>
+                <div class="benefits__content">
+                  <h3 class="benefits__subtitle">Тренерский опыт</h3>
+                  <p class="benefits__text">
+                    Добивайтесь своих целей быстрее
+                    с&nbsp;профессиональным тренером
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
       </main>
-      <footer class="footer">
+      <footer class="footer"></footer>
     </div>
-    <script src="./js/main.min.js" defer></script>
+    <script src="./js/main.min.js"></script>
   </body>
 </html>
