@@ -127,6 +127,8 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
+  font-family: inherit;
+
   appearance: none;
   user-select: none;
 }

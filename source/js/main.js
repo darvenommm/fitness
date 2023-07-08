@@ -1,11 +1,13 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
+import {initAccordions} from './modules/accordion/init-accordion';
 
 import {addVideoHandlers} from './modules/description/video';
 import {addButtonsClassByCardHover} from './modules/subscriptions/card';
 import {initSlider} from './modules/trainers/slider';
 import {addHandlersForTrainersCard} from './modules/trainers/card';
+import {addFAQTabsHandlers} from './modules/faq/tabs';
 
 // ---------------------------------
 
@@ -31,6 +33,8 @@ window.addEventListener('DOMContentLoaded', () => {
     addButtonsClassByCardHover();
     initSlider();
     addHandlersForTrainersCard();
+    initAccordions();
+    addFAQTabsHandlers();
   });
 });
 
