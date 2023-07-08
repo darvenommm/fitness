@@ -3,6 +3,10 @@
   z-index: 1;
 
   max-height: $header-height-desktop;
+
+  @include vp-768 {
+    max-height: $header-height-mobile;
+  }
 }
 
 .header__container {

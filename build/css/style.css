@@ -1207,6 +1207,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 html {
@@ -1582,6 +1583,11 @@ button,
   position: relative;
   z-index: 1;
   max-height: 70px;
+}
+@media (max-width: 767px) {
+  .header {
+    max-height: 40px;
+  }
 }
 
 .header__container {
@@ -2028,20 +2034,44 @@ button,
 }
 
 .subscriptions {
+  position: relative;
+  z-index: 1;
   background-color: #f8f9fc;
   padding: 120px 0;
   padding-bottom: 113px;
+}
+.subscriptions::before {
+  position: absolute;
+  right: -181px;
+  bottom: -170px;
+  z-index: -1;
+  background-image: url("../img/subscriptions/weights@2x.png");
+  background-repeat: no-repeat;
+  background-size: 470px 548px;
+  width: 470px;
+  height: 548px;
+  content: "";
 }
 @media (max-width: 1199px) {
   .subscriptions {
     padding-top: 105px;
     padding-bottom: 60px;
   }
+  .subscriptions::before {
+    right: -81px;
+    bottom: -165px;
+    background-size: 430px 464px;
+    width: 430px;
+    height: 464px;
+  }
 }
 @media (max-width: 767px) {
   .subscriptions {
     padding-top: 64px;
     padding-bottom: 73px;
+  }
+  .subscriptions::before {
+    display: none;
   }
 }
 

@@ -1,17 +1,50 @@
 .subscriptions {
+  position: relative;
+  z-index: 1;
+
   background-color: $color-ghost-white;
 
   padding: 120px 0;
   padding-bottom: 113px;
 
+  &::before {
+    position: absolute;
+    right: -181px;
+    bottom: -170px;
+    z-index: -1;
+
+    background-image: url("../img/subscriptions/weights@2x.png");
+    background-repeat: no-repeat;
+    background-size: 470px 548px;
+
+    width: 470px;
+    height: 548px;
+
+    content: "";
+  }
+
   @include vp-1200 {
     padding-top: 105px;
     padding-bottom: 60px;
+
+    &::before {
+      right: -81px;
+      bottom: -165px;
+
+      background-size: 430px 464px;
+
+      width: 430px;
+      height: 464px;
+    }
   }
 
   @include vp-768 {
     padding-top: 64px;
     padding-bottom: 73px;
+
+    &::before {
+      display: none;
+    }
   }
 }
 
