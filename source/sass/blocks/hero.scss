@@ -1,0 +1,160 @@
+.hero {
+  color: #ffffff;
+
+  background-color: $color-venetian-red;
+  background-image: conic-gradient(
+    from 225deg at 16.03% 39.06%,
+    $color-dark-cerulean,
+    $color-venetian-red,
+    $color-dark-cerulean
+  );
+
+  padding-top: $header-height-desktop;
+  padding-bottom: 95px;
+  margin-top: (-$header-height-desktop);
+
+  @include vp-1200 {
+    padding-bottom: 104px;
+  }
+
+  @include vp-768 {
+    padding-top: $header-height-mobile;
+    margin-top: (-$header-height-mobile);
+    padding-bottom: 78px;
+  }
+}
+
+.hero__container {
+  position: relative;
+
+  padding-top: 93px;
+
+  picture {
+    position: absolute;
+    top: -20px;
+    right: 200px;
+  }
+
+  @include vp-1200 {
+    padding-top: 75px;
+
+    picture {
+      top: 23px;
+      right: 0;
+    }
+  }
+
+  @include vp-768 {
+    padding-top: 69px;
+
+    picture {
+      display: none;
+    }
+  }
+}
+
+.hero__content {
+  display: flex;
+  gap: 0 17px;
+
+  @include vp-1200 {
+    gap: 0 12px;
+  }
+}
+
+.hero__left-content {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+
+  margin: 0;
+  margin-top: 193px;
+  margin-left: 20px;
+  width: 113px;
+
+  @include vp-1200 {
+    margin-left: 0;
+    margin-top: 136px;
+  }
+
+  @include vp-768 {
+    position: absolute;
+    top: 0;
+    left: -1px;
+
+    margin-top: 193px;
+  }
+}
+
+.hero__right-content {
+  width: 247px;
+
+  @include vp-1200 {
+    width: 200px;
+  }
+
+  @include vp-768 {
+    width: 100%;
+  }
+}
+
+.hero__city {
+  font-family: $ff-alumni-sans;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1.44px;
+  text-align: right;
+
+  margin: 0;
+  margin-right: 50px;
+  margin-bottom: 15px;
+
+  @include vp-1200 {
+    font-size: 34px;
+    letter-spacing: 1.02px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+
+  @include vp-768 {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+
+    margin-bottom: 13px;
+  }
+}
+
+.hero__title {
+  text-align: right;
+  font-family: $ff-alumni-sans;
+  font-size: 92px;
+  font-weight: 600;
+  letter-spacing: 4.6px;
+  text-transform: uppercase;
+
+  margin: 0;
+  margin-bottom: 45px;
+
+  @include vp-1200 {
+    font-size: 72px;
+    letter-spacing: 3.6px;
+    text-transform: capitalize;
+
+    margin-bottom: 35px;
+  }
+
+  @include vp-768 {
+    margin-bottom: 21px;
+  }
+}
+
+.hero__button {
+  margin-left: 17px;
+
+  @include vp-768 {
+    margin: 0;
+    width: 100%;
+  }
+}
