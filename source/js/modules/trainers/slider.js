@@ -1,6 +1,6 @@
 import Swiper from '../../vendor/swiper';
 
-export const initSlider = () => {
+export const initTrainersSlider = () => {
   const swiper = new Swiper('.trainers__content', {
     loop: true,
     grabCursor: true,

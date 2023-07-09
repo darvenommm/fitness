@@ -2,13 +2,16 @@
   background-color: $color-ghost-white;
 
   padding: 120px 0;
+  padding-bottom: 109px;
 
   @include vp-1200 {
     padding: 100px 0;
+    padding-bottom: 95px;
   }
 
   @include vp-768 {
     padding: 70px 0;
+    padding-bottom: 60px;
   }
 }
 

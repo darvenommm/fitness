@@ -5,9 +5,11 @@ import {initAccordions} from './modules/accordion/init-accordion';
 
 import {addVideoHandlers} from './modules/description/video';
 import {addButtonsClassByCardHover} from './modules/subscriptions/card';
-import {initSlider} from './modules/trainers/slider';
+import {initTrainersSlider} from './modules/trainers/slider';
 import {addHandlersForTrainersCard} from './modules/trainers/card';
 import {addFAQTabsHandlers} from './modules/faq/tabs';
+import {createReviewsSlider} from './modules/reviews/slider';
+
 
 // ---------------------------------
 
@@ -31,10 +33,11 @@ window.addEventListener('DOMContentLoaded', () => {
     addVideoHandlers();
     initTabs();
     addButtonsClassByCardHover();
-    initSlider();
+    initTrainersSlider();
     addHandlersForTrainersCard();
     initAccordions();
     addFAQTabsHandlers();
+    createReviewsSlider();
   });
 });
 

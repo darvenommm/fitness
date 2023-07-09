@@ -1,0 +1,186 @@
+.reviews {
+  padding: 120px 0;
+
+  overflow-x: hidden;
+
+  @include vp-1200 {
+    padding-top: 89px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-768 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.reviews__title {
+  position: relative;
+  left: 4px;
+
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  font-weight: 600;
+  letter-spacing: 1.62px;
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 37px;
+
+  @include vp-1200 {
+    left: -2px;
+
+    font-size: 42px;
+    letter-spacing: 1.26px;
+
+    margin-bottom: 40px;
+  }
+
+  @include vp-768 {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+
+    margin-bottom: 41px;
+  }
+}
+
+.reviews__content {
+  position: relative;
+  z-index: 1;
+
+  overflow: visible;
+
+  width: 560px;
+  margin: 0 auto;
+
+  &::before,
+  &::after {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+
+    background-color: #ffffff;
+
+    content: "";
+  }
+
+  &::before {
+    right: 100%;
+    left: -1000px;
+  }
+
+  &::after {
+    left: 100%;
+    right: -1000px;
+  }
+
+  @include vp-1200 {
+    width: 566px;
+  }
+
+  @include vp-768 {
+    width: 226px;
+  }
+}
+
+.reviews__items {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 0 28px;
+
+  color: #ffffff;
+
+  background-color: #1c3374;
+
+  padding: 54px 61px 57px;
+
+  picture {
+    flex-shrink: 0;
+    margin-top: 9px;
+  }
+
+  @include vp-1200 {
+    padding-left: 65px;
+  }
+
+  @include vp-768 {
+    flex-direction: column;
+
+    padding: 34px 25px;
+    padding-top: 44px;
+
+    picture {
+      position: absolute;
+      top: 30px;
+      left: 41px;
+
+      width: 68px;
+      height: 68px;
+    }
+  }
+}
+
+.reviews__subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+
+  margin: 0;
+  margin-bottom: 11px;
+
+  @include vp-768 {
+    margin-left: 99px;
+    margin-bottom: 17px;
+  }
+}
+
+.reviews__texts {
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+
+    margin: 0;
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include vp-768 {
+      text-align: center;
+    }
+  }
+}
+
+.reviews__prev,
+.reviews__next {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+
+  transform: translateY(-50%);
+}
+
+.reviews__prev {
+  left: -77px;
+
+  @include vp-768 {
+    left: -42px;
+  }
+}
+
+.reviews__next {
+  right: -77px;
+
+  @include vp-768 {
+    right: -42px;
+  }
+}
