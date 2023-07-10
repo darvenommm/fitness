@@ -13,14 +13,24 @@
     bottom: -170px;
     z-index: -1;
 
-    background-image: url("../img/subscriptions/weights@2x.png");
     background-repeat: no-repeat;
     background-size: 470px 548px;
+    background-image: url("../img/subscriptions/weights@1x.png");
+    @supports (background-image: url("../img/subscriptions/weights@1x.webp")) {
+      background-image: url("../img/subscriptions/weights@1x.webp");
+    }
 
     width: 470px;
     height: 548px;
 
     content: "";
+
+    @include retina {
+      background-image: url("../img/subscriptions/weights@2x.png");
+      @supports (background-image: url("../img/subscriptions/weights@2x.webp")) {
+        background-image: url("../img/subscriptions/weights@2x.webp");
+      }
+    }
   }
 
   @include vp-1200 {
