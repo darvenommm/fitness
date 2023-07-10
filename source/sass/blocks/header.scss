@@ -1,8 +1,17 @@
 .header {
   position: relative;
-  z-index: 1;
 
   max-height: $header-height-desktop;
+
+  &::before {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background-color: #db4c4c;
+
+    content: "";
+  }
 
   @include vp-768 {
     max-height: $header-height-mobile;

@@ -17,7 +17,7 @@
   }
 
   @include vp-1200 {
-    padding: 59px 109px 71px 129px;
+    padding: 59px 109px 62px 129px;
 
     &::before {
       display: none;
@@ -26,7 +26,6 @@
 
   @include vp-768 {
     padding: 60px 0;
-    padding-bottom: 69px;
   }
 }
 
