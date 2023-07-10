@@ -1387,6 +1387,109 @@
             </div>
           </div>
         </section>
+        <div class="main__bottom container">
+          <section class="free-classes">
+            <div
+              class="free-classes__container container"
+              data-form-validate="data-form-validate"
+              data-callback="base"
+            >
+              <h2 class="free-classes__title">Бесплатное занятие</h2>
+              <form
+                class="free-classes__form"
+                action="https://echo.htmlacademy.ru/"
+                method="get"
+                autocomplete="off"
+              >
+                <div class="free-classes__inputs">
+                  <div
+                    class="custom-input"
+                    data-validate-type="text"
+                    data-message-base="Поле обязательно!"
+                    data-message-extra="Неправильно введено имя"
+                    data-limitation="letters"
+                    data-required
+                  >
+                    <span class="custom-input__inner">
+                      <label
+                        class="visually-hidden"
+                        for="free-classes__name"
+                      >
+                        Имя.
+                      </label>
+                      <input
+                        id="free-classes__name"
+                        type="text"
+                        name="name"
+                        placeholder="Введите имя..."
+                        required
+                      >
+                    </span>
+                  </div>
+                  <div
+                    class="custom-input"
+                    data-validate-type="phone"
+                    data-message-base="Поле обязательно!"
+                    data-message-extra="Неправильно введён телефон"
+                    data-matrix-limitation="digit"
+                    data-required
+                  >
+                    <span class="custom-input__inner">
+                      <label
+                        class="visually-hidden"
+                        for="free-classes__phone"
+                      >
+                        Номер телефона.
+                      </label>
+                      <input
+                        id="free-classes__phone"
+                        type="tel"
+                        name="phone"
+                        placeholder="Введите номер..."
+                        required
+                      >
+                    </span>
+                  </div>
+                </div>
+                <button
+                  class="free-classes__button main-button"
+                  type="submit"
+                >
+                  отправить
+                </button>
+              </form>
+            </div>
+          </section>
+          <section class="contacts">
+            <div class="contacts__container container">
+              <h2 class="contacts__title">Контакты</h2>
+              <address class="contacts__body">
+                <ul class="contacts__items">
+                  <li class="contacts__item">
+                    <h3 class="contacts__subtitle">Адрес:</h3>
+                    <p class="contacts__text">
+                      г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7
+                    </p>
+                  </li>
+                  <li class="contacts__item">
+                    <h3 class="contacts__subtitle">Телефон:</h3>
+                    <p class="contacts__text">8-800-555-55-55</p>
+                  </li>
+                  <li class="contacts__item contacts__item--bottom">
+                    <h3 class="contacts__subtitle">График работы:</h3>
+                    <p class="contacts__text">
+                      Пн-Вс: с&nbsp;8:00 до&nbsp;22:00
+                    </p>
+                  </li>
+                  <li class="contacts__item contacts__item--bottom">
+                    <h3 class="contacts__subtitle">Email:</h3>
+                    <p class="contacts__text">omsk@supergym.ru</p>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </section>
+        </div>
       </main>
       <footer class="footer"></footer>
     </div>

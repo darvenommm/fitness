@@ -3,6 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initAccordions} from './modules/accordion/init-accordion';
 
+import {addCustomInputDisabledHandlers} from './modules/custom-input/disabled';
 import {addVideoHandlers} from './modules/description/video';
 import {addButtonsClassByCardHover} from './modules/subscriptions/card';
 import {initTrainersSlider} from './modules/trainers/slider';
@@ -30,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
 
+    addCustomInputDisabledHandlers();
     addVideoHandlers();
     initTabs();
     addButtonsClassByCardHover();

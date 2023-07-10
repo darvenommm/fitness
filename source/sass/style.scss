@@ -18,7 +18,9 @@
 // Blocks
 // ---------------------------------
 
+@import "blocks/main";
 @import "blocks/main-button";
+@import "blocks/custom-input";
 @import "blocks/arrow";
 @import "blocks/header";
 @import "blocks/hero";
@@ -30,3 +32,5 @@
 @import "blocks/stock";
 @import "blocks/faq";
 @import "blocks/reviews";
+@import "blocks/free-classes";
+@import "blocks/contacts";
