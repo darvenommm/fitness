@@ -590,14 +590,14 @@
                     <source
                       width="260"
                       height="294"
-                      srcset="./img/trainers/aleksey@2x.webp 2x, ./img/trainers/aleksey@1x.webp 1x"
+                      srcset="./img/trainers/alex@2x.webp 2x, ./img/trainers/alex@1x.webp 1x"
                       type="image/webp"
                     >
                     <img
                       width="260"
                       height="294"
-                      srcset="./img/trainers/aleksey@2x.jpg 2x, ./img/trainers/aleksey@1x.jpg 1x"
-                      src="./img/trainers/aleksey@1x.jpg"
+                      srcset="./img/trainers/alex@2x.jpg 2x, ./img/trainers/alex@1x.jpg 1x"
+                      src="./img/trainers/alex@1x.jpg"
                       alt="Мужчина."
                       loading="lazy"
                     >
@@ -714,14 +714,14 @@
                     <source
                       width="260"
                       height="294"
-                      srcset="./img/trainers/aleksey@2x.webp 2x, ./img/trainers/aleksey@1x.webp 1x"
+                      srcset="./img/trainers/alex@2x.webp 2x, ./img/trainers/alex@1x.webp 1x"
                       type="image/webp"
                     >
                     <img
                       width="260"
                       height="294"
-                      srcset="./img/trainers/aleksey@2x.jpg 2x, ./img/trainers/aleksey@1x.jpg 1x"
-                      src="./img/trainers/aleksey@1x.jpg"
+                      srcset="./img/trainers/alex@2x.jpg 2x, ./img/trainers/alex@1x.jpg 1x"
+                      src="./img/trainers/alex@1x.jpg"
                       alt="Мужчина."
                       loading="lazy"
                     >
@@ -850,7 +850,7 @@
             <ul class="stock__items">
               <li class="stock__main-item">
                 <div class="stock__main-container">
-                  <div>
+                  <div class="stock__main-top-container">
                     <h3 class="visually-hidden">
                       Безлимитный абонемент в тренажерный зал.
                     </h3>
@@ -1439,6 +1439,7 @@
                         type="text"
                         name="name"
                         placeholder="Введите имя..."
+                        pattern="^\w+$"
                         required
                       >
                     </span>
@@ -1463,6 +1464,8 @@
                         type="tel"
                         name="phone"
                         placeholder="Введите номер..."
+                        pattern="^[\d ]+$"
+                        minlength="11"
                         required
                       >
                     </span>
@@ -1520,7 +1523,7 @@
                     src="./img/logo.svg"
                     alt="Логотип нашего сайта, где написано суперджим."
                   >
-                </spn>
+                </span>
               </li>
               <li class="footer__link-item footer__link-item--services">
                 <a class="footer__link" href="/services">Услуги</a>

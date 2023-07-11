@@ -13,7 +13,14 @@
     content: "";
   }
 
+  @include vp-1200 {
+    position: relative;
+    top: 3px;
+  }
+
   @include vp-768 {
+    top: 0;
+
     max-height: $header-height-mobile;
   }
 }

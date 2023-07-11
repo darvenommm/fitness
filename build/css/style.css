@@ -2798,6 +2798,10 @@ button,
   max-width: 190px;
 }
 
+.stock__main-top-container {
+  width: 100%;
+}
+
 .stock__main-top {
   font-size: 28px;
   font-weight: 700;
@@ -3680,6 +3684,11 @@ button,
     padding: 20px 29px;
   }
 
+  .header {
+    position: relative;
+    top: 3px;
+  }
+
   .header__logo-link img {
     margin: 0;
     width: 82px;
@@ -4213,6 +4222,7 @@ button,
   }
 
   .header {
+    top: 0;
     max-height: 40px;
   }
 
