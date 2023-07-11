@@ -5,10 +5,8 @@
 }
 
 @mixin hover {
-  @media (pointer: fine) {
-    &:hover:not([disabled]) {
-      @content;
-    }
+  &:hover:not([disabled]) {
+    @content;
   }
 }
 
