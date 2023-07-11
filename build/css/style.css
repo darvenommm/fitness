@@ -1937,23 +1937,93 @@ button,
   height: 228px;
 }
 
-.description__video button {
+.description__button {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  border-radius: 50%;
   background-color: transparent;
-  background-image: url("../img/description/play-button.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  cursor: pointer;
+  outline: none;
   border: none;
   width: 100px;
   height: 100px;
   margin: 0;
   padding: 0;
+}
+
+.description__button::before,
+.description__button::after {
+  position: absolute;
+  border-radius: 50%;
+  -webkit-transition: inset 200ms, border-color 200ms, opacity 200ms;
+  transition: inset 200ms, border-color 200ms, opacity 200ms;
+  content: "";
+}
+
+.description__button::before {
+  inset: 16px;
+  background-image: linear-gradient(225deg, #ff1553, #003d85);
+}
+
+.description__button::after {
+  inset: 0;
+  border: 2px solid rgba(255, 21, 83, 0.3);
+}
+
+.description__button svg {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: color 200ms;
+  transition: color 200ms;
+  color: #ffffff;
+}
+
+.description__button:focus-visible:not([disabled])::before {
+  background-color: #ffffff;
+  background-image: none;
+}
+
+.description__button:focus-visible:not([disabled])::after {
+  border-color: #102654;
+}
+
+.description__button:focus-visible:not([disabled]) svg {
+  color: #102654;
+}
+
+.description__button:active:not([disabled])::before {
+  inset: 22px;
+}
+
+.description__button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.description__button[disabled]::before {
+  background-color: #ffffff;
+  background-image: none;
+}
+
+.description__button[disabled]::after {
+  border-color: #102654;
+}
+
+.description__button[disabled] svg {
+  color: #102654;
 }
 
 .subscriptions {
@@ -3723,10 +3793,14 @@ button,
     width: 100%;
   }
 
-  .description__video button {
+  .description__button {
     background-size: 73px 73px;
     width: 73px;
     height: 73px;
+  }
+
+  .description__button::before {
+    inset: 10px;
   }
 
   .subscriptions {
@@ -4239,6 +4313,11 @@ button,
     margin: auto -15px;
   }
 
+  .description__button svg {
+    width: 12px;
+    height: 14px;
+  }
+
   .subscriptions {
     padding-top: 64px;
     padding-bottom: 73px;
@@ -4712,6 +4791,19 @@ button,
 
   .header__tel:hover:not([disabled]) {
     opacity: 0.5;
+  }
+
+  .description__button:hover:not([disabled])::before {
+    background-color: #ffffff;
+    background-image: none;
+  }
+
+  .description__button:hover:not([disabled])::after {
+    border-color: #102654;
+  }
+
+  .description__button:hover:not([disabled]) svg {
+    color: #102654;
   }
 
   .subscriptions__button:hover:not([disabled]) {
