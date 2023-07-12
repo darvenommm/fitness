@@ -1537,7 +1537,7 @@ button,
   -webkit-transition: color 200ms, background-color 200ms;
   transition: color 200ms, background-color 200ms;
   border: 4px solid #ffffff;
-  padding: 20px 52px;
+  padding: 19px 52px;
 }
 
 .main-button.active {
@@ -1882,7 +1882,9 @@ button,
 }
 
 .hero__button {
-  margin-left: 17px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 16px;
 }
 
 .description {
@@ -2066,7 +2068,7 @@ button,
   z-index: 1;
   background-color: #f8f9fc;
   padding: 120px 0;
-  padding-bottom: 113px;
+  padding-bottom: 112px;
 }
 
 .subscriptions::before {
@@ -2324,9 +2326,7 @@ button,
   font-weight: 700;
   letter-spacing: 0.6px;
   border-width: 2px;
-  padding-left: 34px;
-  padding-right: 34px;
-  padding-bottom: 26px;
+  padding: 25px 34px;
   width: 100%;
 }
 
@@ -2581,6 +2581,7 @@ button,
   position: relative;
   z-index: 0;
   color: #ffffff;
+  aspect-ratio: 1/1.12;
   min-height: 292px;
   width: 260px;
   padding: 52px 20px;
@@ -3799,7 +3800,7 @@ button,
   }
 
   .main-button {
-    padding: 20px 29px;
+    padding: 20px 31px;
   }
 
   .header {
@@ -3857,6 +3858,10 @@ button,
     letter-spacing: 3.6px;
     text-transform: capitalize;
     margin-bottom: 35px;
+  }
+
+  .hero__button {
+    margin-left: 13px;
   }
 
   .description {
@@ -3995,12 +4000,11 @@ button,
   .subscriptions__buy-button {
     width: auto;
     margin: 0 auto;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding: 22px 45px;
   }
 
   .super-games {
-    padding: 130px 0;
+    padding: 136px 0;
     padding-bottom: 100px;
   }
 
@@ -4510,7 +4514,7 @@ button,
   }
 
   .super-games {
-    padding: 70px 0;
+    padding: 77px 0;
     padding-bottom: 60px;
   }
 

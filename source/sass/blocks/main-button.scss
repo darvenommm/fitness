@@ -19,10 +19,10 @@
     background-color $trans-time;
 
   border: 4px solid #ffffff;
-  padding: 20px 52px;
+  padding: 19px 52px;
 
   @include vp-1200 {
-    padding: 20px 29px;
+    padding: 20px 31px;
   }
 
   &.active {

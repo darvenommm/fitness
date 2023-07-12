@@ -151,7 +151,13 @@
 }
 
 .hero__button {
-  margin-left: 17px;
+  box-sizing: border-box;
+
+  margin-left: 16px;
+
+  @include vp-1200 {
+    margin-left: 13px;
+  }
 
   @include vp-768 {
     margin: 0;
