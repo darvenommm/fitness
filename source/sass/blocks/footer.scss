@@ -1,13 +1,16 @@
 .footer {
+  position: relative;
+
   background-color: #030a1a;
 
-  padding: 34px 0 49px;
+  padding: 36px 0 49px;
 
   @include vp-1200 {
-    padding: 47px 0 49px;
+    padding: 41px 0 49px;
   }
 
   @include vp-768 {
+    padding-top: 50px;
     padding-bottom: 52px;
   }
 }
@@ -17,6 +20,10 @@
   justify-content: space-between;
   gap: 0 46px;
 
+  @include vp-1200 {
+    gap: 0 50px;
+  }
+
   @include vp-768 {
     flex-direction: column;
     gap: 38px 0;
@@ -24,6 +31,9 @@
 }
 
 .footer__links {
+  position: relative;
+  left: 5px;
+
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -33,7 +43,14 @@
   padding: 0;
   list-style: none;
 
+  @include vp-1200 {
+    left: 6px;
+    gap: 20px;
+  }
+
   @include vp-768 {
+    left: -5px;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -41,41 +58,39 @@
   }
 }
 
-.footer__link-item {
-  &--picture {
-    margin-right: 242px;
+.footer__logo {
+  flex-shrink: 0;
+
+  img {
+    position: relative;
+    top: 8px;
     width: 88px;
     height: 32px;
   }
 
-  img {
-    position: relative;
-    top: -4px;
-  }
-
   @include vp-1200 {
-    &--picture {
-      width: 82px;
-      height: 16px;
-      margin-right: 33px;
-    }
-
     img {
-      top: 0;
-    }
-
-    .footer__link {
-      padding: 0;
+      top: 3px;
+      width: 82px;
+      height: 18px;
     }
   }
 
   @include vp-768 {
-    &--picture {
+    position: absolute;
+    top: 50px;
+    left: 14px;
+
+    img {
+      top: 0;
       width: 68px;
       height: 15px;
-      margin-right: 0;
     }
+  }
+}
 
+.footer__link-item {
+  @include vp-768 {
     &--services {
       order: 2;
     }
@@ -86,6 +101,7 @@
 
     &--stocks {
       order: 1;
+      grid-column: 2 / 3;
     }
 
     &--trainers {
@@ -172,9 +188,8 @@
 }
 
 .footer__socials {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 25px);
   gap: 11px;
 
   margin: 0;

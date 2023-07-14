@@ -14,7 +14,7 @@
   margin-top: (-$header-height-desktop);
 
   @include vp-1200 {
-    padding-bottom: 104px;
+    padding-bottom: 80px;
   }
 
   @include vp-768 {
@@ -36,16 +36,24 @@
   }
 
   @include vp-1200 {
-    padding-top: 75px;
+    display: flex;
+    gap: 0 30px;
+    justify-content: space-around;
+
+    padding-top: 25px;
 
     picture {
-      top: 23px;
-      right: 0;
+      position: static;
+      inset: 0;
+
+      flex-shrink: 0;
     }
   }
 
   @include vp-768 {
-    padding-top: 69px;
+    display: block;
+
+    padding-top: 19px;
 
     picture {
       display: none;
@@ -72,10 +80,11 @@
   margin-top: 193px;
   margin-left: 20px;
   width: 113px;
+  flex-shrink: 0;
 
   @include vp-1200 {
     margin-left: 0;
-    margin-top: 136px;
+    margin-top: 184px;
   }
 
   @include vp-768 {
@@ -91,7 +100,10 @@
   width: 247px;
 
   @include vp-1200 {
-    width: 200px;
+    text-align: end;
+
+    width: auto;
+    margin-top: 50px;
   }
 
   @include vp-768 {
@@ -151,12 +163,12 @@
 }
 
 .hero__button {
-  box-sizing: border-box;
-
-  margin-left: 16px;
+  width: calc(100% - 12px);
+  margin-left: 12px;
 
   @include vp-1200 {
-    margin-left: 13px;
+    width: 187px;
+    margin-left: 12px;
   }
 
   @include vp-768 {

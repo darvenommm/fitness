@@ -280,6 +280,10 @@
   }
 }
 
+.faq__subtitle-container {
+  position: relative;
+}
+
 .faq__subtitle {
   display: inline-block;
 
@@ -334,13 +338,14 @@
 .faq__inner-button {
   position: absolute;
   right: 0;
-  top: 25px;
+  top: 30%;
 
   background-color: transparent;
   border-radius: 50%;
   outline: none;
   cursor: pointer;
   transition: background-color $trans-time;
+  transform: translateY(-50%);
 
   border: 2px solid #1c3374;
   width: 42px;
@@ -397,12 +402,8 @@
     }
   }
 
-  @include vp-1200 {
-    top: 30px;
-  }
-
   @include vp-768 {
-    top: 32px;
+    top: 50%;
 
     width: 32px;
     height: 32px;

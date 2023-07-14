@@ -13,7 +13,7 @@
   &::before,
   &::after {
     position: absolute;
-    inset: 0;
+    inset: -2px 0;
     z-index: 2;
 
     background-color: #ffffff;
@@ -31,8 +31,13 @@
     right: -10000px;
   }
 
+  @include vp-1280 {
+    padding: 0 40px;
+  }
+
   @include vp-1200 {
     margin: 0 56px;
+    padding: 0;
   }
 
   @include vp-768 {
@@ -106,8 +111,11 @@
 }
 
 .trainers__benefits {
+  overflow-y: auto;
+
   margin: 0;
   padding: 0;
+  max-height: 140px;
   padding-left: 51px;
   list-style: none;
 
@@ -238,7 +246,7 @@
   left: -75px;
 
   @include vp-1280 {
-    left: -40px;
+    left: -20px;
   }
 
   @include vp-1200 {
@@ -255,7 +263,7 @@
   right: -75px;
 
   @include vp-1280 {
-    right: -40px;
+    right: -20px;
   }
 
   @include vp-1200 {

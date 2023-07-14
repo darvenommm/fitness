@@ -61,8 +61,6 @@
 }
 
 .subscriptions__title {
-  position: relative;
-
   font-size: 54px;
   font-family: $ff-alumni-sans;
   font-weight: 600;
@@ -72,15 +70,11 @@
   margin: 0;
 
   @include vp-1200 {
-    left: -7px;
-
     font-size: 42px;
     letter-spacing: 1.26px;
   }
 
   @include vp-768 {
-    left: -5px;
-
     font-size: 32px;
     letter-spacing: 0.96px;
   }
@@ -236,7 +230,7 @@
   border: 7px solid #ffffff;
   width: 360px;
   padding: 0 70px;
-  padding-bottom: 68px;
+  padding-bottom: 59px;
   padding-top: 54px;
 
   &::before {
@@ -298,6 +292,7 @@
     max-width: none;
 
     padding: 42px 32px;
+    padding-bottom: 47px;
   }
 }
 
@@ -353,6 +348,8 @@
 
   @include vp-768 {
     font-size: 48px;
+
+    margin-bottom: 33px;
 
     svg {
       width: 24px;

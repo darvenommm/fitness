@@ -1,5 +1,5 @@
 .super-games {
-  padding-top: 120px;
+  padding-top: 127px;
   padding-bottom: 106px;
 
   @include vp-1200 {
@@ -8,7 +8,7 @@
   }
 
   @include vp-768 {
-    padding: 77px 0;
+    padding: 70px 0;
     padding-bottom: 60px;
   }
 }
@@ -53,6 +53,7 @@
 
     width: 100%;
     padding: 50px 44px;
+    padding-top: 47px;
   }
 }
 
@@ -200,6 +201,6 @@
   }
 
   @include vp-768 {
-    width: 202px;
+    width: 100%;
   }
 }

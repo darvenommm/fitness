@@ -13,7 +13,7 @@ export const addVideoHandlers = () => {
       <iframe
         width="364"
         height: "228"
-        src="${button.dataset.src}"
+        src="${button.dataset.src}?mute=1&autoplay=1"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer;

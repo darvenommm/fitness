@@ -171,3 +171,16 @@
     font-size: 18px;
   }
 }
+
+.contacts__link {
+  outline: none;
+  transition: opacity $trans-time;
+
+  @include hover-focus {
+    opacity: 0.5;
+  }
+
+  @include active {
+    opacity: 0.8;
+  }
+}
