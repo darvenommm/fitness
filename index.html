@@ -635,7 +635,7 @@
                   </picture>
                 </li>
                 <li class="trainers__item swiper-slide">
-                  <h3 class="trainers__subtitle">Anna</h3>
+                  <h3 class="trainers__subtitle">Анна Павлова</h3>
                   <p class="trainers__job">CrossFit</p>
                   <ul class="trainers__benefits">
                     <li class="trainers__benefits-item">
@@ -666,7 +666,7 @@
                   </picture>
                 </li>
                 <li class="trainers__item swiper-slide">
-                  <h3 class="trainers__subtitle">Aleksey</h3>
+                  <h3 class="trainers__subtitle">Алексей Лавров</h3>
                   <p class="trainers__job">CrossFit</p>
                   <ul class="trainers__benefits">
                     <li class="trainers__benefits-item">
@@ -697,7 +697,7 @@
                   </picture>
                 </li>
                 <li class="trainers__item swiper-slide">
-                  <h3 class="trainers__subtitle">Alexandr</h3>
+                  <h3 class="trainers__subtitle">Александр Пашков</h3>
                   <p class="trainers__job">CrossFit</p>
                   <ul class="trainers__benefits">
                     <li class="trainers__benefits-item">
@@ -728,7 +728,7 @@
                   </picture>
                 </li>
                 <li class="trainers__item swiper-slide">
-                  <h3 class="trainers__subtitle">Marina</h3>
+                  <h3 class="trainers__subtitle">Мария Кетова</h3>
                   <p class="trainers__job">CrossFit</p>
                   <ul class="trainers__benefits">
                     <li class="trainers__benefits-item">
@@ -910,7 +910,7 @@
                 </picture>
               </li>
               <li class="stock__item">
-                <div>
+                <div class="stock__item-body">
                   <h3 class="stock__subtitle">Месяц бесплатно</h3>
                   <div class="stock__texts">
                     <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
@@ -919,7 +919,7 @@
                 <a class="stock__link" href="#">подробнее</a>
               </li>
               <li class="stock__item">
-                <div>
+                <div class="stock__item-body">
                   <h3 class="stock__subtitle">Скидка&nbsp;20%</h3>
                   <div class="stock__texts">
                     <p>Корпоративный фитнес с&nbsp;командой</p>
@@ -976,9 +976,17 @@
               <div class="faq__tab-content" data-tabs="content">
                 <ul class="faq__questions is-active" data-tabs="element" data-accordion="parent">
                   <li class="faq__question" data-accordion="element">
-                    <h3 class="faq__subtitle" data-accordion="button">
-                      Как стать членом фитнес-центра?
-                    </h3>
+                    <div class="faq__subtitle-container">
+                      <h3 class="faq__subtitle" data-accordion="button">
+                        Как стать членом фитнес-центра?
+                      </h3>
+                      <button
+                        class="faq__inner-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Нажми, чтобы открыть ответ."
+                      ></button>
+                    </div>
                     <div class="faq__body" data-accordion="content">
                       <p>
                         При первом посещении и&nbsp;покупке абонемента,
@@ -988,17 +996,19 @@
                         на&nbsp;почту.
                       </p>
                     </div>
-                    <button
-                      class="faq__inner-button"
-                      type="button"
-                      data-accordion="button"
-                      aria-label="Нажми, чтобы открыть ответ."
-                    ></button>
                   </li>
                   <li class="faq__question" data-accordion="element">
-                    <h3 class="faq__subtitle" data-accordion="button">
-                      Где можно посмотреть расписание?
-                    </h3>
+                    <div class="faq__subtitle-container">
+                      <h3 class="faq__subtitle" data-accordion="button">
+                        Где можно посмотреть расписание?
+                      </h3>
+                      <button
+                        class="faq__inner-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Нажми, чтобы открыть ответ."
+                      ></button>
+                    </div>
                     <div class="faq__body" data-accordion="content">
                       <p>
                         При первом посещении и&nbsp;покупке абонемента,
@@ -1008,18 +1018,20 @@
                         на&nbsp;почту.
                       </p>
                     </div>
-                    <button
-                      class="faq__inner-button"
-                      type="button"
-                      data-accordion="button"
-                      aria-label="Нажми, чтобы открыть ответ."
-                    ></button>
                   </li>
                   <li class="faq__question" data-accordion="element">
-                    <h3 class="faq__subtitle" data-accordion="button">
-                      Есть кулеры в&nbsp;центре?
-                      Предоставляются полотенца?
-                    </h3>
+                    <div class="faq__subtitle-container">
+                      <h3 class="faq__subtitle" data-accordion="button">
+                        Есть кулеры в&nbsp;центре?
+                        Предоставляются полотенца?
+                      </h3>
+                      <button
+                        class="faq__inner-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Нажми, чтобы открыть ответ."
+                      ></button>
+                    </div>
                     <div class="faq__body" data-accordion="content">
                       <p>
                         При первом посещении и&nbsp;покупке абонемента,
@@ -1029,18 +1041,20 @@
                         на&nbsp;почту.
                       </p>
                     </div>
-                    <button
-                      class="faq__inner-button"
-                      type="button"
-                      data-accordion="button"
-                      aria-label="Нажми, чтобы открыть ответ."
-                    ></button>
                   </li>
                   <li class="faq__question" data-accordion="element">
-                    <h3 class="faq__subtitle" data-accordion="button">
-                      Сколько тренеров работает в&nbsp;клубе
-                      и&nbsp;какова их&nbsp;квалификация?
-                    </h3>
+                    <div class="faq__subtitle-container">
+                      <h3 class="faq__subtitle" data-accordion="button">
+                        Сколько тренеров работает в&nbsp;клубе
+                        и&nbsp;какова их&nbsp;квалификация?
+                      </h3>
+                      <button
+                        class="faq__inner-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Нажми, чтобы открыть ответ."
+                      ></button>
+                    </div>
                     <div class="faq__body" data-accordion="content">
                       <p>
                         При первом посещении и&nbsp;покупке абонемента,
@@ -1050,19 +1064,21 @@
                         на&nbsp;почту.
                       </p>
                     </div>
-                    <button
-                      class="faq__inner-button"
-                      type="button"
-                      data-accordion="button"
-                      aria-label="Нажми, чтобы открыть ответ."
-                    ></button>
                   </li>
                 </ul>
                 <ul class="faq__questions" data-tabs="element" data-accordion="parent">
                   <li class="faq__question" data-accordion="element">
-                    <h3 class="faq__subtitle" data-accordion="button">
-                      Занятия с тренером входят в абонемент?
-                    </h3>
+                    <div class="faq__subtitle-container">
+                      <h3 class="faq__subtitle" data-accordion="button">
+                        Занятия с тренером входят в абонемент?
+                      </h3>
+                      <button
+                        class="faq__inner-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Нажми, чтобы открыть ответ."
+                      ></button>
+                    </div>
                     <div class="faq__body" data-accordion="content">
                       <p>
                         При посещении тренажерного зала вам необходимо оплачить
@@ -1072,17 +1088,19 @@
                         по&nbsp;тренажеру или технике выполнения упражнения.
                       </p>
                     </div>
-                    <button
-                      class="faq__inner-button"
-                      type="button"
-                      data-accordion="button"
-                      aria-label="Нажми, чтобы открыть ответ."
-                    ></button>
                   </li>
                   <li class="faq__question" data-accordion="element">
-                    <h3 class="faq__subtitle" data-accordion="button">
-                      Можно&nbsp;ли заморозить абонемент?
-                    </h3>
+                    <div class="faq__subtitle-container">
+                      <h3 class="faq__subtitle" data-accordion="button">
+                        Можно&nbsp;ли заморозить абонемент?
+                      </h3>
+                      <button
+                        class="faq__inner-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Нажми, чтобы открыть ответ."
+                      ></button>
+                    </div>
                     <div class="faq__body" data-accordion="content">
                       <p>
                         При посещении тренажерного зала вам необходимо оплачить
@@ -1092,18 +1110,20 @@
                         по&nbsp;тренажеру или технике выполнения упражнения.
                       </p>
                     </div>
-                    <button
-                      class="faq__inner-button"
-                      type="button"
-                      data-accordion="button"
-                      aria-label="Нажми, чтобы открыть ответ."
-                    ></button>
                   </li>
                   <li class="faq__question" data-accordion="element">
-                    <h3 class="faq__subtitle" data-accordion="button">
-                      Есть&nbsp;ли лимит по&nbsp;посещениям
-                      тренажерного зала и&nbsp;групповых занятий?
-                    </h3>
+                    <div class="faq__subtitle-container">
+                      <h3 class="faq__subtitle" data-accordion="button">
+                        Есть&nbsp;ли лимит по&nbsp;посещениям
+                        тренажерного зала и&nbsp;групповых занятий?
+                      </h3>
+                      <button
+                        class="faq__inner-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Нажми, чтобы открыть ответ."
+                      ></button>
+                    </div>
                     <div class="faq__body" data-accordion="content">
                       <p>
                         При посещении тренажерного зала вам необходимо оплачить
@@ -1113,17 +1133,19 @@
                         по&nbsp;тренажеру или технике выполнения упражнения.
                       </p>
                     </div>
-                    <button
-                      class="faq__inner-button"
-                      type="button"
-                      data-accordion="button"
-                      aria-label="Нажми, чтобы открыть ответ."
-                    ></button>
                   </li>
                   <li class="faq__question" data-accordion="element">
-                    <h3 class="faq__subtitle" data-accordion="button">
-                      Что такое семейный доступ и&nbsp;доступ для друзей?
-                    </h3>
+                    <div class="faq__subtitle-container">
+                      <h3 class="faq__subtitle" data-accordion="button">
+                        Что такое семейный доступ и&nbsp;доступ для друзей?
+                      </h3>
+                      <button
+                        class="faq__inner-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Нажми, чтобы открыть ответ."
+                      ></button>
+                    </div>
                     <div class="faq__body" data-accordion="content">
                       <p>
                         При посещении тренажерного зала вам необходимо оплачить
@@ -1133,20 +1155,22 @@
                         по&nbsp;тренажеру или технике выполнения упражнения.
                       </p>
                     </div>
-                    <button
-                      class="faq__inner-button"
-                      type="button"
-                      data-accordion="button"
-                      aria-label="Нажми, чтобы открыть ответ."
-                    ></button>
                   </li>
                 </ul>
                 <ul class="faq__questions" data-tabs="element" data-accordion="parent">
                   <li class="faq__question" data-accordion="element">
-                    <h3 class="faq__subtitle" data-accordion="button">
-                      Предлагает&nbsp;ли клуб услуги по&nbsp;консультированию
-                      по&nbsp;вопросам питания?
-                    </h3>
+                    <div class="faq__subtitle-container">
+                      <h3 class="faq__subtitle" data-accordion="button">
+                        Предлагает&nbsp;ли клуб услуги по&nbsp;консультированию
+                        по&nbsp;вопросам питания?
+                      </h3>
+                      <button
+                        class="faq__inner-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Нажми, чтобы открыть ответ."
+                      ></button>
+                    </div>
                     <div class="faq__body" data-accordion="content">
                       <p>
                         Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру,
@@ -1155,18 +1179,20 @@
                         программу питания.
                       </p>
                     </div>
-                    <button
-                      class="faq__inner-button"
-                      type="button"
-                      data-accordion="button"
-                      aria-label="Нажми, чтобы открыть ответ."
-                    ></button>
                   </li>
                   <li class="faq__question" data-accordion="element">
-                    <h3 class="faq__subtitle" data-accordion="button">
-                      Проводятся&nbsp;ли в&nbsp;клубе какие-либо
-                      мероприятия или соревнования?
-                    </h3>
+                    <div class="faq__subtitle-container">
+                      <h3 class="faq__subtitle" data-accordion="button">
+                        Проводятся&nbsp;ли в&nbsp;клубе какие-либо
+                        мероприятия или соревнования?
+                      </h3>
+                      <button
+                        class="faq__inner-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Нажми, чтобы открыть ответ."
+                      ></button>
+                    </div>
                     <div class="faq__body" data-accordion="content">
                       <p>
                         Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру,
@@ -1175,17 +1201,19 @@
                         программу питания.
                       </p>
                     </div>
-                    <button
-                      class="faq__inner-button"
-                      type="button"
-                      data-accordion="button"
-                      aria-label="Нажми, чтобы открыть ответ."
-                    ></button>
                   </li>
                   <li class="faq__question" data-accordion="element">
-                    <h3 class="faq__subtitle" data-accordion="button">
-                      Можно&nbsp;ли приобрести в&nbsp;центре спортивное питание?
-                    </h3>
+                    <div class="faq__subtitle-container">
+                      <h3 class="faq__subtitle" data-accordion="button">
+                        Можно&nbsp;ли приобрести в&nbsp;центре спортивное питание?
+                      </h3>
+                      <button
+                        class="faq__inner-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Нажми, чтобы открыть ответ."
+                      ></button>
+                    </div>
                     <div class="faq__body" data-accordion="content">
                       <p>
                         Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру,
@@ -1194,17 +1222,19 @@
                         программу питания.
                       </p>
                     </div>
-                    <button
-                      class="faq__inner-button"
-                      type="button"
-                      data-accordion="button"
-                      aria-label="Нажми, чтобы открыть ответ."
-                    ></button>
                   </li>
                   <li class="faq__question" data-accordion="element">
-                    <h3 class="faq__subtitle" data-accordion="button">
-                      Есть&nbsp;ли в&nbsp;центре детская комната?
-                    </h3>
+                    <div class="faq__subtitle-container">
+                      <h3 class="faq__subtitle" data-accordion="button">
+                        Есть&nbsp;ли в&nbsp;центре детская комната?
+                      </h3>
+                      <button
+                        class="faq__inner-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Нажми, чтобы открыть ответ."
+                      ></button>
+                    </div>
                     <div class="faq__body" data-accordion="content">
                       <p>
                         Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру,
@@ -1213,19 +1243,21 @@
                         программу питания.
                       </p>
                     </div>
-                    <button
-                      class="faq__inner-button"
-                      type="button"
-                      data-accordion="button"
-                      aria-label="Нажми, чтобы открыть ответ."
-                    ></button>
                   </li>
                 </ul>
                 <ul class="faq__questions" data-tabs="element" data-accordion="parent">
                   <li class="faq__question" data-accordion="element">
-                    <h3 class="faq__subtitle" data-accordion="button">
-                      Есть в&nbsp;фитнес-центре дресс-код?
-                    </h3>
+                    <div class="faq__subtitle-container">
+                      <h3 class="faq__subtitle" data-accordion="button">
+                        Есть в&nbsp;фитнес-центре дресс-код?
+                      </h3>
+                      <button
+                        class="faq__inner-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Нажми, чтобы открыть ответ."
+                      ></button>
+                    </div>
                     <div class="faq__body" data-accordion="content">
                       <p>
                         Для тренировок необходимо иметь предназначенную для
@@ -1238,18 +1270,20 @@
                         специальные классы (например, йога, пилатес).
                       </p>
                     </div>
-                    <button
-                      class="faq__inner-button"
-                      type="button"
-                      data-accordion="button"
-                      aria-label="Нажми, чтобы открыть ответ."
-                    ></button>
                   </li>
                   <li class="faq__question" data-accordion="element">
-                    <h3 class="faq__subtitle" data-accordion="button">
-                      Можно&nbsp;ли приводить с&nbsp;собой
-                      детей на&nbsp;тренировки?
-                    </h3>
+                    <div class="faq__subtitle-container">
+                      <h3 class="faq__subtitle" data-accordion="button">
+                        Можно&nbsp;ли приводить с&nbsp;собой
+                        детей на&nbsp;тренировки?
+                      </h3>
+                      <button
+                        class="faq__inner-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Нажми, чтобы открыть ответ."
+                      ></button>
+                    </div>
                     <div class="faq__body" data-accordion="content">
                       <p>
                         Для тренировок необходимо иметь предназначенную для
@@ -1262,17 +1296,19 @@
                         специальные классы (например, йога, пилатес).
                       </p>
                     </div>
-                    <button
-                      class="faq__inner-button"
-                      type="button"
-                      data-accordion="button"
-                      aria-label="Нажми, чтобы открыть ответ."
-                    ></button>
                   </li>
                   <li class="faq__question" data-accordion="element">
-                    <h3 class="faq__subtitle" data-accordion="button">
-                      Какие дополнительные правила посещения центра?
-                    </h3>
+                    <div class="faq__subtitle-container">
+                      <h3 class="faq__subtitle" data-accordion="button">
+                        Какие дополнительные правила посещения центра?
+                      </h3>
+                      <button
+                        class="faq__inner-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Нажми, чтобы открыть ответ."
+                      ></button>
+                    </div>
                     <div class="faq__body" data-accordion="content">
                       <p>
                         Для тренировок необходимо иметь предназначенную для
@@ -1285,18 +1321,20 @@
                         специальные классы (например, йога, пилатес).
                       </p>
                     </div>
-                    <button
-                      class="faq__inner-button"
-                      type="button"
-                      data-accordion="button"
-                      aria-label="Нажми, чтобы открыть ответ."
-                    ></button>
                   </li>
                   <li class="faq__question" data-accordion="element">
-                    <h3 class="faq__subtitle" data-accordion="button">
-                      Нужна&nbsp;ли медицинская справка для
-                      посещения залов и&nbsp;бассейна?
-                    </h3>
+                    <div class="faq__subtitle-container">
+                      <h3 class="faq__subtitle" data-accordion="button">
+                        Нужна&nbsp;ли медицинская справка для
+                        посещения залов и&nbsp;бассейна?
+                      </h3>
+                      <button
+                        class="faq__inner-button"
+                        type="button"
+                        data-accordion="button"
+                        aria-label="Нажми, чтобы открыть ответ."
+                      ></button>
+                    </div>
                     <div class="faq__body" data-accordion="content">
                       <p>
                         Для тренировок необходимо иметь предназначенную для
@@ -1309,12 +1347,6 @@
                         специальные классы (например, йога, пилатес).
                       </p>
                     </div>
-                    <button
-                      class="faq__inner-button"
-                      type="button"
-                      data-accordion="button"
-                      aria-label="Нажми, чтобы открыть ответ."
-                    ></button>
                   </li>
                 </ul>
               </div>
@@ -1422,7 +1454,7 @@
                   <div
                     class="custom-input"
                     data-validate-type="text"
-                    data-message-base="Поле обязательно!"
+                    data-message-base="Поле обязательно к заполнению!"
                     data-message-extra="Неправильно введено имя"
                     data-limitation="letters"
                     data-required
@@ -1447,7 +1479,7 @@
                   <div
                     class="custom-input"
                     data-validate-type="phone"
-                    data-message-base="Поле обязательно!"
+                    data-message-base="Поле обязательно к заполнению!"
                     data-message-extra="Неправильно введён телефон"
                     data-matrix-limitation="digit"
                     data-required
@@ -1493,7 +1525,11 @@
                   </li>
                   <li class="contacts__item">
                     <p class="contacts__subtitle">Телефон:</p>
-                    <p class="contacts__text">8-800-555-55-55</p>
+                    <p class="contacts__text">
+                      <a class="contacts__link" href="tel:+78005555555">
+                        8-800-555-55-55
+                      </a>
+                    </p>
                   </li>
                   <li class="contacts__item contacts__item--bottom">
                     <p class="contacts__subtitle">График работы:</p>
@@ -1503,7 +1539,11 @@
                   </li>
                   <li class="contacts__item contacts__item--bottom">
                     <p class="contacts__subtitle">Email:</p>
-                    <p class="contacts__text">omsk@supergym.ru</p>
+                    <p class="contacts__text">
+                      <a class="contacts__link" href="mailto:omsk@supergym.ru">
+                        omsk@supergym.ru
+                      </a>
+                    </p>
                   </li>
                 </ul>
               </address>
@@ -1514,17 +1554,15 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__container">
+            <span class="footer__logo">
+              <img
+                width="88"
+                height="32"
+                src="./img/logo.svg"
+                alt="Логотип нашего сайта, где написано суперджим."
+              >
+            </span>
             <ul class="footer__links">
-              <li class="footer__link-item footer__link-item--picture">
-                <span class="footer__link">
-                  <img
-                    width="88"
-                    height="32"
-                    src="./img/logo.svg"
-                    alt="Логотип нашего сайта, где написано суперджим."
-                  >
-                </span>
-              </li>
               <li class="footer__link-item footer__link-item--services">
                 <a class="footer__link" href="#">Услуги</a>
               </li>
