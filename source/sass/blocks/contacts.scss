@@ -17,7 +17,7 @@
   }
 
   @include vp-1200 {
-    padding: 59px 109px 62px 129px;
+    padding: 59px 109px 66px 129px;
 
     &::before {
       display: none;
@@ -173,7 +173,6 @@
 }
 
 .contacts__link {
-  outline: none;
   transition: opacity $trans-time;
 
   @include hover-focus {

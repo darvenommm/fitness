@@ -135,7 +135,7 @@
 
       padding: 17px 120px 43px;
       margin: 0 116px;
-      margin-bottom: 46px;
+      margin-bottom: 49px;
 
       .benefits__subtitle {
         font-size: 22px;
@@ -224,6 +224,10 @@
   font-size: 74px;
   font-weight: 700;
   line-height: 133%;
+
+  @include vp-1200 {
+    line-height: 125%;
+  }
 
   @include vp-768 {
     line-height: 100%;

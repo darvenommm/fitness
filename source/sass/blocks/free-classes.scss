@@ -4,7 +4,7 @@
 
   color: #ffffff;
 
-  padding: 56px 170px 70px 0;
+  padding: 56px 170px 66px 0;
 
   &::before {
     position: absolute;
@@ -20,7 +20,7 @@
   @include vp-1200 {
     background-color: #102654;
 
-    padding: 54px 162px 71px 132px;
+    padding: 54px 162px 67px 132px;
 
     &::before {
       display: none;
@@ -58,7 +58,7 @@
     font-weight: 700;
     letter-spacing: 1.26px;
 
-    margin-bottom: 19px;
+    margin-bottom: 24px;
   }
 
   @include vp-768 {

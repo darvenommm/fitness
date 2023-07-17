@@ -121,8 +121,6 @@
   color: #ffffff;
   font-size: 14px;
 
-  outline: none;
-
   padding: 10px 5px;
 
   &::before {
@@ -139,16 +137,6 @@
     content: "";
   }
 
-  &::after {
-    position: absolute;
-    inset: 0 -5px;
-
-    transition: border-color $trans-time;
-    border: 1px solid transparent;
-
-    content: "";
-  }
-
   @include hover {
     &::before {
       background-color: #ffffff;
@@ -158,10 +146,6 @@
   @include focus {
     &::before {
       display: none;
-    }
-
-    &::after {
-      border-color: #ffffff;
     }
   }
 
@@ -176,8 +160,7 @@
   }
 
   &:not([href]) {
-    &::before,
-    &::after {
+    &::before {
       display: none;
     }
   }
@@ -207,7 +190,6 @@
 
   color: inherit;
 
-  outline: none;
   transition: color $trans-time;
 
   width: 25px;

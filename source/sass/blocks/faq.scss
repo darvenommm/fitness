@@ -97,7 +97,6 @@
 
   background-color: transparent;
   cursor: pointer;
-  outline: none;
   transition:
     border-color $trans-time,
     color $trans-time;
@@ -272,6 +271,9 @@
   @include vp-1200 {
     padding-top: 35px;
     padding-bottom: 13px;
+
+    padding-top: 30px;
+    padding-bottom: 11px;
   }
 
   @include vp-768 {
@@ -328,10 +330,12 @@
 
   @include vp-1200 {
     padding-right: 130px;
+    margin-bottom: 30px;
   }
 
   @include vp-768 {
     padding-right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -342,7 +346,6 @@
 
   background-color: transparent;
   border-radius: 50%;
-  outline: none;
   cursor: pointer;
   transition: background-color $trans-time;
   transform: translateY(-50%);
@@ -403,7 +406,7 @@
   }
 
   @include vp-768 {
-    top: 50%;
+    top: 42%;
 
     width: 32px;
     height: 32px;

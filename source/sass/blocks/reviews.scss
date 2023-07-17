@@ -4,12 +4,12 @@
   overflow-x: hidden;
 
   @include vp-1200 {
-    padding-top: 89px;
+    padding-top: 94px;
     padding-bottom: 100px;
   }
 
   @include vp-768 {
-    padding-top: 70px;
+    padding-top: 65px;
     padding-bottom: 70px;
   }
 }

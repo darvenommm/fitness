@@ -139,7 +139,6 @@
 
   opacity: 0.5;
   background-color: transparent;
-  outline: none;
   transition:
     opacity $trans-time,
     background-color $trans-time;
@@ -213,7 +212,7 @@
 
   @include vp-1200 {
     grid-template-columns: 1fr;
-    gap: 31px;
+    gap: 35px;
 
     flex-direction: column;
   }
@@ -277,7 +276,7 @@
     width: auto;
     max-width: 442px;
     padding: 0 109px;
-    padding-bottom: 68px;
+    padding-bottom: 64px;
     padding-top: 59px;
 
     margin: 0 auto;
@@ -400,7 +399,7 @@
   @include vp-1200 {
     width: auto;
     margin: 0 auto;
-    padding: 22px 45px;
+    padding: 22px 44px;
   }
 }
 
