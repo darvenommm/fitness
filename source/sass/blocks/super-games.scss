@@ -3,12 +3,12 @@
   padding-bottom: 106px;
 
   @include vp-1200 {
-    padding: 136px 0;
+    padding: 140px 0;
     padding-bottom: 100px;
   }
 
   @include vp-768 {
-    padding: 65px 0;
+    padding: 70px 0;
     padding-bottom: 60px;
   }
 }

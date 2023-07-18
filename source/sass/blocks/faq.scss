@@ -141,6 +141,10 @@
         opacity: 1;
       }
     }
+
+    @include focus {
+      outline: 3px solid #000000;
+    }
   }
 
   @include disabled {
@@ -269,9 +273,6 @@
   }
 
   @include vp-1200 {
-    padding-top: 35px;
-    padding-bottom: 13px;
-
     padding-top: 30px;
     padding-bottom: 11px;
   }

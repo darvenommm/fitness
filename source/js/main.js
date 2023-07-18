@@ -8,7 +8,6 @@ import {addVideoHandlers} from './modules/description/video';
 import {addButtonsClassByCardHover} from './modules/subscriptions/card';
 import {initTrainersSlider} from './modules/trainers/slider';
 import {addHandlersForTrainersCard} from './modules/trainers/card';
-import {addFAQTabsHandlers} from './modules/faq/tabs';
 import {createReviewsSlider} from './modules/reviews/slider';
 
 
@@ -38,7 +37,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initTrainersSlider();
     addHandlersForTrainersCard();
     initAccordions();
-    addFAQTabsHandlers();
     createReviewsSlider();
   });
 });

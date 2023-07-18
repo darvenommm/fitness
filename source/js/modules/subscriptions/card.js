@@ -1,6 +1,5 @@
 export const addButtonsClassByCardHover = () => {
   const ROOT_SELECTOR = '.subscriptions';
-  const TAB_SELECTOR = '.subscriptions__button';
   const ACTIVE_BUTTON_CLASS = 'active';
   const ACTIVE_CARD_CLASS = 'active';
   const CARD_SELECTOR = '.subscriptions__item';
@@ -46,18 +45,6 @@ export const addButtonsClassByCardHover = () => {
 
       button.addEventListener('blur', () => {
         card.classList.remove(ACTIVE_CARD_CLASS);
-      });
-    });
-
-    const tabs = root.querySelectorAll(TAB_SELECTOR);
-
-    tabs.forEach((tab) => {
-      tab.addEventListener('click', () => {
-        tabs.forEach((tabButton) => {
-          tabButton.tabIndex = '0';
-        });
-
-        tab.tabIndex = '-1';
       });
     });
   }
