@@ -13,17 +13,9 @@ export const initTrainersSlider = () => {
         slidesPerView: 1,
         spaceBetween: 20,
       },
-      450: {
+      768: {
         slidesPerView: 2,
         spaceBetween: 30,
-      },
-      725: {
-        slidesPerView: 2,
-        spaceBetween: 40,
-      },
-      1000: {
-        slidesPerView: 3,
-        spaceBetween: 40,
       },
       1200: {
         slidesPerView: 4,

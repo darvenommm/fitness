@@ -226,6 +226,10 @@
     }
   }
 
+  @include vp-1280 {
+    aspect-ratio: 1 / 1.1;
+  }
+
   @include vp-768 {
     padding-top: 42px;
     padding-bottom: 44px;
@@ -254,7 +258,6 @@
   }
 
   @include vp-768 {
-    top: 140px;
     left: -42px;
   }
 }
@@ -271,7 +274,6 @@
   }
 
   @include vp-768 {
-    top: 140px;
     right: -42px;
   }
 }

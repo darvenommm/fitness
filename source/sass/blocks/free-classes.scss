@@ -96,4 +96,9 @@
   padding-bottom: 14px;
   padding-top: 16px;
   width: 100%;
+
+  @include vp-1200 {
+    padding-bottom: 14px;
+    padding-top: 16px;
+  }
 }
